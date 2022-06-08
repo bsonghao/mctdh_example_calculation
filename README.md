@@ -10,8 +10,12 @@ To conduct propagation calculation. Three files are required:
 3. Bash file (.sh) the file that could be submitted to the cluster
 
 To submit jobs to the cluster run command
-sbatch submit_mctdh.sh
+sbatch submit_mctdh.sh [output_dir]
 
-spectra can be generated using autospec84. It takes auto file as input files
+spectra can be generated using autospec84. It takes auto file as input files.
+The command to generate spectra is
+autospec84 -f [auto file name]
 
 adiabatic / diabatic state population can be generated using adpop84. It takes psi and pes as input files  
+The command to generate state population is
+adpop84 -f [psi file name] -w -q (or -mc)
