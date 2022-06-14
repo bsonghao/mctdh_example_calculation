@@ -19,3 +19,6 @@ autospec84 -f [auto file name]
 adiabatic / diabatic state population can be generated using adpop84. It takes psi and pes as input files  
 The command to generate state population is
 adpop84 -f [psi file name] -w -q (or -mc)
+
+Thanks for Neil Raymond for providing me template mctdh input and operator files
+
